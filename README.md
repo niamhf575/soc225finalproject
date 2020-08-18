@@ -1,3 +1,3 @@
 # soc225finalproject: Social Vulnerability
 
-<h1> Introduction </h1>
+<h2> Introduction </h2>
