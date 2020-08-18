@@ -65,6 +65,7 @@ The homeless PIT counts are conducted by CoCs. A Continuum of Care (CoC) “is a
 
 In the social vulnerability data, some census tracts are not included due to lack of census data. Since this data set was designed to help allocate resources in emergency situations, it is concerning that some counties are not included at all due to issues with data collection. 
 
+<h2> References </h2>
 Centers for Disease Control and Prevention (CDC). (2020) CDC SVI 2018 Documentation. https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf
 Williams, J. (2017, January 10). The Politics of Homelessness in the United States. Retrieved August 17, 2020, from https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935307.001.0001/oxfordhb-9780199935307-e-153
 Meehan, M. (2019, July 04). Unsheltered And Uncounted: Rural America's Hidden Homeless. Retrieved August 17, 2020, from https://www.npr.org/sections/health-shots/2019/07/04/736240349/in-rural-areas-homeless-people-are-harder-to-find-and-to-help
