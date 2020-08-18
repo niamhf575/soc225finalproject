@@ -2,7 +2,7 @@
 
 <h2> Introduction </h2>
 
-When disasters occur, some communities experience worse effects and face greater struggles in recovering (CDC, 2020). One way of measuring a community’s ability to withstand hardship is by their social vulnerability. Issues that impact social vulnerability can be economic, demographic, or resource-related (CDC, 2020). This concept of social vulnerability can apply to individuals, as well. For example, homelessness renders a person especially vulnerable to both the elements and to further hardship. Previous research has shown that homelessness is impacted by poverty and housing shortages (Williams, 2017). This project looks at the intersection of housing and other measures of social vulnerability, particularly crowded housing. The CDC’s social vulnerability index defines crowding as the number of occupied household units with more people than rooms (2020). My research question is: how do living conditions relate to other measures of social vulnerability? Are counties with a higher level of crowded living also poorer? Do states with larger homeless populations also have high levels of crowding? 
+When disasters occur, some communities experience worse effects and face greater struggles in recovering (CDC, 2020). One way of measuring a community’s ability to withstand hardship is by their social vulnerability. Issues that impact social vulnerability can be economic, demographic, or resource-related (CDC, 2020). This concept of social vulnerability can apply to individuals, as well. For example, homelessness renders a person especially vulnerable to both the elements and to further hardship. Previous research has shown that homelessness is impacted by poverty and housing shortages (Williams, 2017). This project looks at the intersection of housing and other measures of social vulnerability, particularly crowded housing. The CDC’s social vulnerability index defines a crowded household as an occupied household unit with more people than rooms (2020). My research question is: how do living conditions relate to other measures of social vulnerability? Are counties with a higher level of crowded living also poorer? Do states with larger homeless populations also have high levels of crowding? 
 
 <h2> Data </h2>
 Social Vulnerability dataset https://www.kaggle.com/dannellyz/2018-cdcs-social-vulnerability-index-svi?select=2018_CDC_SVI.csv
@@ -12,6 +12,7 @@ https://www.cdc.gov/nchs/data_access/urban_rural.htm
 
 Homeless PIT counts dataset
 
+Above is the summary of EP_POV (the percentage of people in a county who are in poverty) and EP_CROWD (the percentage of households that qualify as crowded, with more occupants than rooms.)
 <h2> Results </h2>
 
 <p align="center">
@@ -24,9 +25,9 @@ Figure 1 shows boxplots of crowding percentage for each category in the NCHS Urb
 
 <p align="center">
   Figure 2
+  <img src=https://github.com/niamhf575/soc225finalproject/blob/master/poverty_v_crowding.jpg alt="crowding boxplots" width="600"/>
 </p>
 
-<img src=https://github.com/niamhf575/soc225finalproject/blob/master/poverty_v_crowding.jpg alt="crowding boxplots" width="600"/>
 
 Figure 2 shows the percentage of people in a county living in poverty on the y-axis and the percentage of crowded households in a county on the x-axis. Each data point represents a county. Each small, numbered subplot corresponds to a different category in the NCHS Urban–Rural Classification scheme. A trendline is included for each category, most of which show a positive linear relationship. The exception is the first category, which is also the one with the highest level of crowding shown in Figure 1. 
 
