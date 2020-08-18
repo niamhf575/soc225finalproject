@@ -29,7 +29,7 @@ Homeless PIT counts dataset
 
 <h2> Results </h2>
 
-![crowding boxplots](soc225finalproject/crowding_boxplot.jpg?)
+![crowding boxplots](https://github.com/niamhf575/soc225finalproject/blob/master/homelessness_v_crowding.png?)
 
 Figure 1
 
