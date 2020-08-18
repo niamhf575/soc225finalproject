@@ -28,7 +28,9 @@ https://www.cdc.gov/nchs/data_access/urban_rural.htm
 Homeless PIT counts dataset
 
 <h2> Results </h2>
-![crowding boxplots](https://github.com/niamhf575/soc225finalproject/crowding_boxplots.jpg?raw=true)
+
+![crowding boxplots](https://github.com/niamhf575/soc225finalproject/crowding_boxplot.jpg?raw=true)
+
 Figure 1
 
 Figure 1 shows boxplots of crowding percentage for each category in the NCHS Urban–Rural Classification scheme. 1-4 are Metropolitan categories, while 5 & 6 are non-metropolitan. Generally, the categories go from most urban (1) to most rural (6). The average percentage is between 1 and 3 for all groups, with more spread from the mean in groups 1,5, and 6 than 2, 3, and 4. It seems that extremely urban or extremely rural areas have the most variation. Finally, all but group 3 are skewed, with a greater spread for data above the mean than data below. In my third plot, I examined the effect of crowding on homelessness. States with a higher proportion of homeless people in their population also had a higher proportion of crowding. 
