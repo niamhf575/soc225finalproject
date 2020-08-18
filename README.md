@@ -43,7 +43,7 @@ Figure 1 shows boxplots of crowding percentage for each category in the NCHS Urb
 </p>
 
 
-![crowding boxplots](https://github.com/niamhf575/soc225finalproject/blob/master/poverty_v_crowding.png?)
+![crowding boxplots](https://github.com/niamhf575/soc225finalproject/blob/master/poverty_v_crowding.jpg?)
 
 Figure 2 shows the percentage of people in a county living in poverty on the y-axis and the percentage of crowded households in a county on the x-axis. Each data point represents a county. Each small, numbered subplot corresponds to a different category in the NCHS Urban–Rural Classification scheme. A trendline is included for each category, most of which show a positive linear relationship. The exception is the first category, which is the one with the highest level of crowding shown in Figure 1. 
 
