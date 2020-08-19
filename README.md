@@ -11,8 +11,11 @@ Urban Rural Classification scheme dataset
 https://www.cdc.gov/nchs/data_access/urban_rural.htm
 
 Homeless PIT counts dataset
-
-Above is the summary of EP_POV (the percentage of people in a county who are in poverty) and EP_CROWD (the percentage of households that qualify as crowded, with more occupants than rooms.)
+<p align="center">
+<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary.png alt="crowding boxplots" width="600"/>
+<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary3.png alt="crowding boxplots" width="600"/>
+</p>
+Above is the summary of EP_POV (the percentage of people in a county who are in poverty), EP_CROWD (the percentage of households that qualify as crowded, with more occupants than rooms.), crowd_percent (the percentage of crowded households in a state), and homeless_percent (the percentage of the state population experiencing homelessness).
 <h2> Results </h2>
 
 <p align="center">
