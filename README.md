@@ -13,7 +13,7 @@ Urban Rural Classification scheme dataset
 https://www.cdc.gov/nchs/data_access/urban_rural.htm
 
 Homeless PIT counts dataset: https://www.hudexchange.info/resource/5948/2019-ahar-part-1-pit-estimates-of-homelessness-in-the-us/
-<p align = "center">
+<p align = "left">
 <img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary.png alt="crowding boxplots" width="400"/>
 <img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary3.png alt="crowding boxplots" width="400"/>
   </p>
