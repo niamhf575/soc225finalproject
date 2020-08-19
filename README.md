@@ -5,15 +5,18 @@
 When disasters occur, some communities experience worse effects and face greater struggles in recovering (CDC, 2020). One way of measuring a community’s ability to withstand hardship is by their social vulnerability. Issues that impact social vulnerability can be economic, demographic, or resource-related (CDC, 2020). This concept of social vulnerability can apply to individuals, as well. For example, homelessness renders a person especially vulnerable to both the elements and to further hardship. Previous research has shown that homelessness is impacted by poverty and housing shortages (Williams, 2017). This project looks at the intersection of housing and other measures of social vulnerability, particularly crowded housing. The CDC’s social vulnerability index defines a crowded household as an occupied household unit with more people than rooms (2020). My research question is: how do living conditions relate to other measures of social vulnerability? Are counties with a higher level of crowded living also poorer? Do states with larger homeless populations also have high levels of crowding? 
 
 <h2> Data </h2>
+My social vulnerabitlity dataset is from the CDC, as is the urban/rural classification data. The homeless point in time (PIT) counts are from HUD.
+
 Social Vulnerability dataset https://www.kaggle.com/dannellyz/2018-cdcs-social-vulnerability-index-svi?select=2018_CDC_SVI.csv
 
 Urban Rural Classification scheme dataset
 https://www.cdc.gov/nchs/data_access/urban_rural.htm
 
-Homeless PIT counts dataset
+Homeless PIT counts dataset: https://www.hudexchange.info/resource/5948/2019-ahar-part-1-pit-estimates-of-homelessness-in-the-us/
+
 <p align="center">
-<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary.png alt="crowding boxplots" width="600"/>
-<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary3.png alt="crowding boxplots" width="600"/>
+<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary.png alt="crowding boxplots" width="400"/>
+<img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary3.png alt="crowding boxplots" width="400"/>
 </p>
 Above is the summary of EP_POV (the percentage of people in a county who are in poverty), EP_CROWD (the percentage of households that qualify as crowded, with more occupants than rooms.), crowd_percent (the percentage of crowded households in a state), and homeless_percent (the percentage of the state population experiencing homelessness).
 <h2> Results </h2>
@@ -52,16 +55,18 @@ My results show that crowded living conditions correlate with other elements of 
 A limitation of this research is that I was only able to find PIT homeless counts for states, rather than counties. This means that I did not have the opportunity to look at my analysis in finer detail. Another limitation is that different variables in my data were collected in different years: the CDC crowding data is from 2018 while the homeless PIT counts are from 2019. I am reasonably confident in my finding that crowding and poverty have a correlation. However, I am less confident in my finding that homelessness and crowding have a correlation. States are very large areas that contain very different communities, and my visualization doesn’t make it clear if crowding and homeless are both high within individual communities. Also, it’s possible homelessness and crowding are simply higher in states that have more urban areas. In the opposite direction, homelessness may in fact be undercounted in the less-crowded rural areas, according to an NPR article (Meehan, 2019). 
 
 <h3>Ethical Concerns </h3>
-The homeless PIT counts are conducted by CoCs. A Continuum of Care (CoC) “is a regional or local planning body that coordinates housing and services funding for homeless families and individuals.”  Continuums of Care are required to annually count “people experiencing homelessness who are sheltered in emergency shelter, transitional housing, and Safe Havens on a single night.” This suggests that the PIT count may be an undercount, as it seems to only count people receiving some type of assistance. It is also unclear if the homeless people consent to be counted or are even aware that the PIT count is occurring. Additionally, homeless people in rural areas may be undercounted: these rural areas have fewer public homeless support resources and homeless camps are out of sight in wooded areas (Meehan, 2019).
+The homeless PIT counts are conducted by CoCs. A Continuum of Care (CoC) “is a regional or local planning body that coordinates housing and services funding for homeless families and individuals (What is a Cotinuum of Care?, 2016).”  Continuums of Care are required to annually count “people experiencing homelessness who are sheltered in emergency shelter, transitional housing, and Safe Havens on a single night (HUD).” This suggests that the PIT count may be an undercount, as it seems to only count people receiving some type of assistance. It is also unclear if the homeless people consent to be counted or are even aware that the PIT count is occurring. Additionally, homeless people in rural areas may be undercounted: these rural areas have fewer public homeless support resources and homeless camps are out of sight in wooded areas (Meehan, 2019).
 
 In the social vulnerability data, some census tracts are not included due to lack of census data. Since this data set was designed to help allocate resources in emergency situations, it is concerning that some counties are not included at all due to issues with data collection. 
 
 <h2> References </h2>
-Williams, J. (2017, January 10). The Politics of Homelessness in the United States. Retrieved August 17, 2020, from https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935307.001.0001/oxfordhb-9780199935307-e-153
-
 Centers for Disease Control and Prevention (CDC). (2020) CDC SVI 2018 Documentation. https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf
+
 Williams, J. (2017, January 10). The Politics of Homelessness in the United States. Retrieved August 17, 2020, from https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935307.001.0001/oxfordhb-9780199935307-e-153
 
 Meehan, M. (2019, July 04). Unsheltered And Uncounted: Rural America's Hidden Homeless. Retrieved August 17, 2020, from https://www.npr.org/sections/health-shots/2019/07/04/736240349/in-rural-areas-homeless-people-are-harder-to-find-and-to-help
 
+Department of Housing and Urban Development (HUD). (n.d.). Point-in-Time Count and Housing Inventory Count. Retrieved August 19, 2020, from https://www.hudexchange.info/programs/hdx/pit-hic/
+
+What is a Continuum of Care? (2016, October 24). Retrieved August 19, 2020, from https://endhomelessness.org/resource/what-is-a-continuum-of-care/
 
