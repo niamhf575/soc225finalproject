@@ -16,7 +16,6 @@ Homeless PIT counts dataset: https://www.hudexchange.info/resource/5948/2019-aha
 
 <img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary.png alt="crowding boxplots" width="400"/>
 <img src=https://github.com/niamhf575/soc225finalproject/blob/master/summary3.png alt="crowding boxplots" width="400"/>
-
 Above is the summary of EP_POV (the percentage of people in a county who are in poverty), EP_CROWD (the percentage of households that qualify as crowded, with more occupants than rooms.), crowd_percent (the percentage of crowded households in a state), and homeless_percent (the percentage of the state population experiencing homelessness).
 <h2> Results </h2>
 
