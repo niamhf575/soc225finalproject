@@ -29,7 +29,7 @@ Above is the summary of EP_POV (the percentage of people in a county who are in 
 <p align="center">
 <img src=https://github.com/niamhf575/soc225finalproject/blob/master/crowding_boxplot.jpg alt="crowding boxplots" width="600"/>
 </p>
-Figure 1 shows boxplots of crowding percentage for each category in the NCHS Urban–Rural Classification scheme. 1-4 are Metropolitan categories, while 5 & 6 are non-metropolitan. Generally, the categories go from most urban (1) to most rural (6). The average percentage is between 1 and 3 for all groups, with more spread from the mean in groups 1, 5, and 6 than 2, 3, and 4. It seems that extremely urban or extremely rural areas have the most variation. Finally, all but group 4 are skewed, with a greater spread for data above the mean than data below.
+Figure 1 shows boxplots of crowding percentage for each category in the NCHS Urban–Rural Classification scheme. 1-4 are Metropolitan categories, while 5 & 6 are non-metropolitan (CDC, 2017). Generally, the categories go from most urban (1) to most rural (6). The average percentage is between 1 and 3 for all groups, with more spread from the mean in groups 1, 5, and 6 than 2, 3, and 4. It seems that extremely urban or extremely rural areas have the most variation. Finally, all but group 4 are skewed, with a greater spread for data above the mean than data below.
 
 <p align="center">
   Figure 2
@@ -55,7 +55,7 @@ My results show that crowded living conditions correlate with other elements of 
 &nbsp;
 
 
-A limitation of this research is that I was only able to find PIT homeless counts for states, rather than counties. This means that I did not have the opportunity to look at my analysis in finer detail. Another limitation is that different variables in my data were collected in different years: the CDC crowding data is from 2018 while the homeless PIT counts are from 2019. I am reasonably confident in my finding that crowding and poverty have a correlation. However, I am less confident in my finding that homelessness and crowding have a correlation. States are very large areas that contain very different communities, and my visualization doesn’t make it clear if crowding and homeless are both high within individual communities. Also, it’s possible homelessness and crowding are simply higher in states that have more urban areas. In the opposite direction, homelessness may in fact be undercounted in the less-crowded rural areas, according to an NPR article (Meehan, 2019). 
+A limitation of this research is that I was only able to find PIT homeless counts for states, rather than counties. This means that I did not have the opportunity to look at my analysis in finer detail. Another limitation is that different variables in my data were collected in different years: the CDC crowding data is from 2018 while the homeless PIT counts are from 2019, and the urban-rural classifications are from 2013. I am reasonably confident in my finding that crowding and poverty have a correlation. However, I am less confident in my finding that homelessness and crowding have a correlation. States are very large areas that contain very different communities, and my visualization doesn’t make it clear if crowding and homeless are both high within individual communities. Also, it’s possible homelessness and crowding are simply higher in states that have more urban areas. In the opposite direction, homelessness may in fact be undercounted in the less-crowded rural areas, according to an NPR article (Meehan, 2019). 
 
 <h3>Ethical Concerns </h3>
 The homeless PIT counts are conducted by CoCs. A Continuum of Care (CoC) “is a regional or local planning body that coordinates housing and services funding for homeless families and individuals (What is a Continuum of Care?, 2016).”  Continuums of Care are required to annually count “people experiencing homelessness who are sheltered in emergency shelter, transitional housing, and Safe Havens on a single night (HUD).” This suggests that the PIT count may be an undercount, as it seems to only count people receiving some type of assistance. It is also unclear if the people using resources for homelessness consent to be counted or are even aware that the PIT count is occurring. Additionally, people experiencing homelessness in rural areas may be undercounted: these rural areas have fewer public homeless support resources and homeless camps are out of sight in wooded areas (Meehan, 2019).   <br/>
@@ -76,4 +76,7 @@ Meehan, M. (2019, July 04). Unsheltered And Uncounted: Rural America's Hidden Ho
 Department of Housing and Urban Development (HUD). (n.d.). Point-in-Time Count and Housing Inventory Count. Retrieved August 19, 2020, from https://www.hudexchange.info/programs/hdx/pit-hic/
 
 What is a Continuum of Care? (2016, October 24). Retrieved August 19, 2020, from https://endhomelessness.org/resource/what-is-a-continuum-of-care/
+&nbsp;
 
+
+Centers for Disease Control and Prevention (CDC). (2017). NCHS Urban-Rural Classification Scheme for Counties. Retrieved August 19, 2020, from https://www.cdc.gov/nchs/data_access/urban_rural.htm
