@@ -1,0 +1,109 @@
+---
+title: "SOC225_final_project"
+author: "Niamh Froelich"
+date: "8/11/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+theme_set(theme_minimal()) 
+
+# social vulnerability data
+CDC_SVI_data <- read.csv('data/2018_CDC_SVI.csv')
+# -999 means missing data in this data set
+CDC_SVI_data <- CDC_SVI_data %>% filter(E_TOTPOP != 0 & E_CROWD != -999 & E_POV != -999 && E_HU != -999 & EP_POV != -999 & EP_CROWD != -999)
+
+# Urban and rural county classification data from: https://www.cdc.gov/nchs/data_access/urban_rural.htm
+
+urban_rural_data <- read.csv('data/NCHSURCodes2013.csv')
+urban_rural_data <- urban_rural_data %>% mutate(FIPS = ï..FIPS.code)
+
+# join urban/rural county designations with the CDC data
+CDC_SVI_data <- left_join(CDC_SVI_data , urban_rural_data, by = 'FIPS')
+
+# group crowding counts, household counts, and population counts by state
+CDC_SVI_state <- CDC_SVI_data %>% group_by(ST_ABBR) %>% summarise(crowd = sum(E_CROWD), households = sum(E_HU), pop = sum(E_TOTPOP), poverty = sum(E_POV))
+
+CDC_SVI_state
+```
+
+
+```{r}
+# Point in time counts of homeless individuals for each individual 
+# shelter that performs a count
+homeless_data <- read.csv("data/2007-2019-PIT-Counts-by-CoC.csv")
+
+# get the state abbreviation from the shelter id, rename the 2019 count column
+homeless_data <- homeless_data %>% mutate('ST_ABBR' = substring(homeless_data$CoC.Number,0,2)) %>% mutate(homeless_count = parse_number(Overall.Homeless..2019)) 
+
+# Sum the homeless counts by state
+homeless_data <- homeless_data %>% select(ST_ABBR, homeless_count) %>% group_by(ST_ABBR) %>% summarise(homeless_counts = sum(homeless_count))
+
+# join homeless counts with CDC data
+CDC_SVI_state <- left_join(CDC_SVI_state, homeless_data, by = 'ST_ABBR') 
+
+# get crowding and homeless counts as proportions
+CDC_SVI_state <- CDC_SVI_state %>% mutate('crowd_percent' = crowd/households * 100) %>% mutate('pov_percentage' = poverty/pop * 100) 
+
+CDC_SVI_state <- CDC_SVI_state %>% mutate('homeless_percent' = homeless_counts/pop * 100)
+
+CDC_SVI_state
+```
+
+
+```{r}
+
+library(plotly)
+library(tidyverse)
+library(htmlwidgets)
+
+CDC_SVI_state <- CDC_SVI_state %>% mutate('State' = ST_ABBR)
+
+# plot homeless & crowding data
+homeless_v_crowd <- ggplot(CDC_SVI_state, aes(x=crowd_percent, y=homeless_percent, label = State)) + geom_point() + geom_smooth(method ='lm') + ggtitle("Homeless % vs. Crowding % by US State") +
+  xlab("Percentage Crowded Households") + ylab("Percentage Homeless Population") 
+
+ggsave("homelessness_v_crowding.jpg")
+
+p <- ggplotly(homeless_v_crowd, tooltip = 'State')
+
+p
+
+htmlwidgets::saveWidget(as_widget(p), "HomelessAndCrowding.html")
+
+CDC_SVI_state %>% select("crowd_percent", "homeless_percent")%>% summary()
+```
+
+
+```{r}
+
+
+CDC_SVI_data1 <- CDC_SVI_data %>% filter( !is.na(X2013.code))
+
+CDC_SVI_data2 <- CDC_SVI_data1 %>% filter((EP_POV >= 0) & (EP_POV < 35) & (EP_CROWD<8))
+
+poverty_vs_crowd2 <- ggplot(CDC_SVI_data2, aes(x=EP_CROWD, y=EP_POV,color=as.character(X2013.code), alpha = 0.1)) + geom_point() + geom_smooth(method ='lm',  colour="black")+ theme(legend.position = "none") + facet_wrap(~X2013.code) + ggtitle("Poverty vs. Crowding by US County, by Urban (1) to Rural (6)") +xlab("Percentage Crowded Living Conditions") + ylab("Percentage In Poverty") 
+
+poverty_vs_crowd2
+
+ggsave("poverty_v_crowding.jpg")
+```
+```{r}
+
+CDC_SVI_data <- CDC_SVI_data %>% filter(EP_CROWD < 10 & !is.na(X2013.code)) 
+
+plot3 <- ggplot(CDC_SVI_data, aes(x = as.character(X2013.code), y = EP_CROWD, color =as.character(X2013.code))) + geom_boxplot() + theme(legend.position = "none") + ggtitle("Crowded Living Conditions in US Counties") +
+  xlab("Urban (1) to Rural (6)") + ylab("Percentage in Crowded Living Conditions") 
+
+plot3
+
+ggsave("crowding_boxplot.jpg")
+
+CDC_SVI_data %>% select("EP_CROWD", "EP_POV")%>% summary()
+```
+
+
+
+
+http://rmarkdown.rstudio.com
