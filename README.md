@@ -5,7 +5,7 @@
 When disasters occur, some communities experience worse effects and face greater struggles in recovering (CDC, 2020). The CDC refers to a community’s ability to withstand hardship as their social vulnerability, which they measure through a social vulnerability index (CDC, 2020). Issues that impact social vulnerability can be economic, demographic, or resource-related (CDC, 2020). This concept of social vulnerability can apply to individuals, as well. For example, homelessness renders a person especially vulnerable to both the elements and to further hardship. Previous research has shown that homelessness is impacted by poverty and housing shortages (Williams, 2017). This project looks at the intersection of housing and other measures of social vulnerability, particularly crowded housing. The CDC’s social vulnerability index defines a crowded household as an occupied household unit with more people than rooms (2020). My research question is: how do living conditions relate to other measures of social vulnerability? Are counties with a higher level of crowded living also poorer? Do states with larger homeless populations also have high levels of crowding? 
 
 <h2> Data </h2>
-My social vulnerabitlity dataset is from the Centers for Disease Control and Prevention (CDC). The urban/rural classification data is from the National Center for Health Statistics (NCHS). The homeless point in time (PIT) counts are from the Department of Housing and Urban Development (HUD).
+My social vulnerabitlity dataset is from the Centers for Disease Control and Prevention (CDC). The urban/rural classification data is from the National Center for Health Statistics (NCHS). The homeless point in time (PIT) counts are from the Department of Housing and Urban Development (HUD). <br/> 
 &nbsp;
 
 
@@ -65,7 +65,7 @@ The homeless PIT counts are conducted by CoCs. A Continuum of Care (CoC) “is a
 In the social vulnerability data, some census tracts are not included due to lack of census data. Since this data set was designed to help allocate resources in emergency situations, it is concerning that some counties are not included at all due to issues with data collection. 
 
 <h2> References </h2>
-Centers for Disease Control and Prevention (CDC). (2020) CDC SVI 2018 Documentation. https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf
+Centers for Disease Control and Prevention (CDC). (2020) CDC SVI 2018 Documentation. https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf  <br/> 
 &nbsp;
 
 
