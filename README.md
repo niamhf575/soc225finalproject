@@ -8,6 +8,7 @@ When disasters occur, some communities experience worse effects and face greater
 My social vulnerabitlity dataset is from the Centers for Disease Control and Prevention (CDC). The urban/rural classification data is from the National Center for Health Statistics (NCHS). The homeless point in time (PIT) counts are from the Department of Housing and Urban Development (HUD).
 &nbsp;
 
+
 Social Vulnerability dataset https://www.kaggle.com/dannellyz/2018-cdcs-social-vulnerability-index-svi?select=2018_CDC_SVI.csv
 
 Urban Rural Classification scheme dataset
@@ -66,6 +67,7 @@ In the social vulnerability data, some census tracts are not included due to lac
 <h2> References </h2>
 Centers for Disease Control and Prevention (CDC). (2020) CDC SVI 2018 Documentation. https://svi.cdc.gov/Documents/Data/2018_SVI_Data/SVI2018Documentation.pdf
 &nbsp;
+
 
 Williams, J. (2017, January 10). The Politics of Homelessness in the United States. Retrieved August 17, 2020, from https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199935307.001.0001/oxfordhb-9780199935307-e-153
 
